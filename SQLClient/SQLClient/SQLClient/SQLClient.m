@@ -45,8 +45,8 @@ struct COLUMN
 
 @interface SQLClient ()
 
-@property (nonatomic, strong) NSOperationQueue* workerQueue;
-@property (nonatomic, weak) NSOperationQueue* callbackQueue;
+// worker queue
+// callback queue
 @property (atomic, assign, getter=isExecuting) BOOL executing;
 
 @end
