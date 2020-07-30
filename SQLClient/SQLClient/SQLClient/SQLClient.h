@@ -24,6 +24,9 @@ extern NSString* _Nonnull const SQLClientSeverityKey;
  */
 @property (nonatomic, assign) int timeout;
 
+@property (nonatomic, strong, nullable) NSOperationQueue* workerQueue;
+@property (nonatomic, weak, nullable) NSOperationQueue* callbackQueue;
+
 /**
  *  The character set to use for converting the UCS-2 server results. Default is UTF-8.
  *  Set before calling connect. Can be set to any charset supported by the iconv library.
